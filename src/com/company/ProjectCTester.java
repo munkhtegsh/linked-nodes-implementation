@@ -181,37 +181,37 @@ public class ProjectCTester {
 		System.out.println("Index of \"it!\" is 2: "+ wordList.indexOf(new String("it!")));
 		System.out.println("Last index of \"it!\" is 2: "+ wordList.lastIndexOf(new String("it!")));
 		
-		/*// UNCOMMENT IF COMPLETING THE EXTRA CREDIT
+		// UNCOMMENT IF COMPLETING THE EXTRA CREDIT
 		System.out.println("\n\n********EXTRA CREDIT");
 		LinkedHeadTailList<Integer> listA = new LinkedHeadTailList<Integer>();
 		LinkedHeadTailList<Integer> listB = new LinkedHeadTailList<Integer>();
 
 		// both empty lists []
-		System.out.println("Comparison result: 0: "+ listA.compareTo(listB)); 
-		
-		// no mismatched elements found and listA [1] is longer than listB [] 
-		listA.addFront(1); 		
-		System.out.println("Comparison result: positive number: "+ listA.compareTo(listB)); 
-		
+		System.out.println("Comparison result: 0: "+ listA.compareTo(listB));
+
+		// no mismatched elements found and listA [1] is longer than listB []
+		listA.addFront(1);
+		System.out.println("Comparison result: positive number: "+ listA.compareTo(listB));
+
 		// no mismatched elements found and listA [1] is shorter than listB [1, 2]
 		listB.addFront(1);
-		listB.addBack(2); 	
-		System.out.println("Comparison result: negative number: "+ listA.compareTo(listB)); 
-		
-		// no mismatched elements found [1, 2], equal length 
-		listA.addBack(2); 		
-		System.out.println("Comparison result: 0: "+ listA.compareTo(listB));
-		
-		// for first mismatched element, the listA element [1, 2, 3] is smaller than the listB element [1, 2, 4]
-		listA.addBack(3);
-		listB.addBack(4); 		
+		listB.addBack(2);
 		System.out.println("Comparison result: negative number: "+ listA.compareTo(listB));
 
-		// for first mismatched element, the listA element [1, 2, 6] is larger than the listB element [1, 2, 4] 
+		// no mismatched elements found [1, 2], equal length
+		listA.addBack(2);
+		System.out.println("Comparison result: 0: "+ listA.compareTo(listB));
+
+		// for first mismatched element, the listA element [1, 2, 3] is smaller than the listB element [1, 2, 4]
+		listA.addBack(3);
+		listB.addBack(4);
+		System.out.println("Comparison result: negative number: "+ listA.compareTo(listB));
+
+		// for first mismatched element, the listA element [1, 2, 6] is larger than the listB element [1, 2, 4]
 		listA.removeBack();
-		listA.addBack(6); 		
-		System.out.println("Comparison result: positive number: "+ listA.compareTo(listB)); 
-		
+		listA.addBack(6);
+		System.out.println("Comparison result: positive number: "+ listA.compareTo(listB));
+
 		// for first mismatched element, the listA element [1, 2, 3, 4, 7] is smaller than the listB element [7]
 		listA.clear();
 		listB.clear();
@@ -220,8 +220,8 @@ public class ProjectCTester {
 		listA.addBack(3);
 		listA.addBack(4);
 		listB.addBack(7);
-		System.out.println("Comparison result: negative number: "+ listA.compareTo(listB));	
-	
+		System.out.println("Comparison result: negative number: "+ listA.compareTo(listB));
+
 		// for first mismatched element, the listA element [7] is larger than the listB element [1, 2, 3, 4, 7]
 		listA.clear();
 		listB.clear();
@@ -230,9 +230,7 @@ public class ProjectCTester {
 		listB.addBack(3);
 		listB.addBack(4);
 		listA.addBack(7);
-		System.out.println("Comparison result: postitive number: "+ listA.compareTo(listB));	
-		*/
-	
+		System.out.println("Comparison result: postitive number: "+ listA.compareTo(listB));
 	}
 
 }

@@ -199,8 +199,74 @@ public class LinkedHeadTailList<T extends Comparable<? super T>> implements Head
         }
     }
 
-    public int compareTo(LinkedHeadTailList<T> obj) {
-       return 0;
+    public int compareTo(LinkedHeadTailList<T> otherList) {
+        int num = 10;
+        if (otherList instanceof LinkedHeadTailList<?>) {
+            LinkedHeadTailList<T> newList = (LinkedHeadTailList<T>) otherList;
+            Node currentHead = head;
+            Node currentOther = newList.head;
+
+            if (entries == otherList.entries) {
+                if (head == null && otherList.head == null) {
+                    return 0;
+                }
+
+                while (currentHead != null && currentOther != null) {
+                    if (currentHead.data.compareTo(currentOther.getData()) > 0) {
+                        return 1;
+                    } else if (currentHead.data.compareTo(currentOther.getData()) < 0) {
+                        return -1;
+                    } else {
+                        num = 0;
+                    }
+                    currentHead = currentHead.next;
+                    currentOther = currentOther.next;
+                }
+            } else if (entries > otherList.entries) {
+
+                if (otherList.head == null) {
+                    return 1;
+                }
+
+                while (currentOther != null) {
+                    if (currentHead.data.compareTo(currentOther.getData()) > 0) {
+                        return 1;
+                    } else if (currentHead.data.compareTo(currentOther.getData()) < 0) {
+                        return -1;
+                    } else {
+                        num = 0;
+                    }
+
+                    currentHead = currentHead.next;
+                    currentOther = currentOther.next;
+
+                    if (num == 0) {
+                        return 1;
+                    }
+                }
+            } else if (entries < otherList.entries) {
+                if (head == null) {
+                    return -1;
+                }
+                while (currentHead != null) {
+                    if (currentHead.data.compareTo(currentOther.getData()) > 0) {
+                        return 1;
+                    } else if (currentHead.data.compareTo(currentOther.getData()) < 0) {
+                        return -1;
+                    } else {
+                        num = 0;
+                    }
+                    currentHead = currentHead.next;
+                    currentOther = currentOther.next;
+                }
+
+                if (num == 0) {
+                    return -1;
+                }
+            }
+        }
+
+        return num;
     }
 
     // YOUR CLASS HERE!
