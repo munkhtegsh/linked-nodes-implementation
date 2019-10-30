@@ -89,97 +89,97 @@ public class ProjectCTester {
 		System.out.println("Last index of 35 is -1: " + list.lastIndexOf(35));
 		System.out.println("Last index of 3  is  4:  " + list.lastIndexOf(3));
 		System.out.println("Last index of 5  is 33: " + list.lastIndexOf(5));
-//
-//
-//		System.out.println("\n\n********TESTING SIZE");
-//		System.out.println("Size is 34: " + list.size());
-//		System.out.println();
-//
-//		System.out.println("\n********TESTING GET ENTRY");
-//		System.out.println("Element in position 15 is 14: "+list.getEntry(15));
-//		System.out.println("Element in position  0 is  3: "+list.getEntry(0));
-//		System.out.println("Element in position 33 is  5: "+list.getEntry(33));
-//		System.out.println("Element in position 39 is null: "+list.getEntry(39));
-//		System.out.println("Element in position -1 is null: "+list.getEntry(-1));
-//
-//		System.out.println("\n\n********TESTING REMOVES");
-//		// test removes from nonEmpty
-//		System.out.println("Remove front element 3: "+list.removeFront());
-//		System.out.println("Remove back element  5 :"+list.removeBack());
-//		System.out.println("Remove front element 0: "+list.removeFront());
-//		System.out.println("Remove back element 31: "+list.removeBack());
-//		System.out.println();
-//		System.out.println("Should display:\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]\thead=1 tail=30");
-//		list.display();
-//		System.out.println();
-//
-//		// test removes from empty
-//		list.clear();
-//		System.out.println("Remove element null: "+list.removeFront());
-//		System.out.println("Remove element null: "+list.removeBack());
-//		System.out.println();
-//
-//		// test removes from singleton
-//		list.clear();
-//		list.addFront(1);
-//		System.out.println("Remove element 1: "+list.removeFront());
-//		System.out.println("Should display:\n[]");
-//		list.display();
-//		System.out.println();
-//		System.out.println();
-//		list.addBack(1);
-//		System.out.println("Remove element 1: "+list.removeFront());
-//		System.out.println("Should display:\n[]");
-//		list.display();
-//		System.out.println();
-//		System.out.println();
-//		list.addFront(1);
-//		System.out.println("Remove element 1: "+list.removeBack());
-//		System.out.println("Should display:\n[]");
-//		list.display();
-//		System.out.println();
-//		System.out.println();
-//		list.addBack(1);
-//		System.out.println("Remove element 1: "+list.removeBack());
-//		System.out.println("Should display:\n[]");
-//		list.display();
-//		System.out.println();
-//		System.out.println();
-//
-//		System.out.println("\n\n********TESTING MIX OF ADDS AND REMOVES");
-//		list.addFront(3);
-//		list.addBack(2);
-//		list.addFront(4);
-//		list.addFront(5);
-//		list.addBack(3);
-//		list.addBack(8);
-//		list.addBack(9);
-//		System.out.println("Should display:\n[5, 4, 3, 2, 3, 8, 9]\thead=5 tail=9");
-//		list.display();
-//		System.out.println();
-//
-//		list.removeFront();
-//		list.removeBack();
-//		System.out.println("Should display:\n[4, 3, 2, 3, 8]\thead=4 tail=8");
-//		list.display();
-//		System.out.println();
-//
-//		System.out.println("********TESTING WITH STRINGS");
-//		HeadTailListInterface<String> wordList = new LinkedHeadTailList<String>();
-//		wordList.addFront("job!");
-//		wordList.addFront("Nice");
-//		wordList.addFront("it!");
-//		wordList.addFront("did");
-//		wordList.addFront("You");
-//		System.out.println("Should display:\n[You, did, it!, Nice, job!] \thead=You tail=job!");
-//		wordList.display();
-//		System.out.println();
-//		System.out.println("Contains \"Nice\" is true: "+ wordList.contains(new String("Nice")));
-//		System.out.println("Contains \"You\"  is true: "+ wordList.contains(new String("You")));
-//		System.out.println("Contains \"you\"  is false: "+ wordList.contains(new String("you")));
-//		System.out.println();
-//		System.out.println("Index of \"it!\" is 2: "+ wordList.indexOf(new String("it!")));
-//		System.out.println("Last index of \"it!\" is 2: "+ wordList.lastIndexOf(new String("it!")));
+
+
+		System.out.println("\n\n********TESTING SIZE");
+		System.out.println("Size is 34: " + list.size());
+		System.out.println();
+
+		System.out.println("\n********TESTING GET ENTRY");
+		System.out.println("Element in position 15 is 14: "+list.getEntry(15));
+		System.out.println("Element in position  0 is  3: "+list.getEntry(0));
+		System.out.println("Element in position 33 is  5: "+list.getEntry(33));
+		System.out.println("Element in position 39 is null: "+list.getEntry(39));
+		System.out.println("Element in position -1 is null: "+list.getEntry(-1));
+
+		System.out.println("\n\n********TESTING REMOVES");
+		// test removes from nonEmpty
+		System.out.println("Remove front element 3: "+list.removeFront());
+		System.out.println("Remove back element  5 :"+list.removeBack());
+		System.out.println("Remove front element 0: "+list.removeFront());
+		System.out.println("Remove back element 31: "+list.removeBack());
+		System.out.println();
+		System.out.println("Should display:\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]\thead=1 tail=30");
+		list.display();
+		System.out.println();
+
+		// test removes from empty
+		list.clear();
+		System.out.println("Remove element null: "+list.removeFront());
+		System.out.println("Remove element null: "+list.removeBack());
+		System.out.println();
+
+		// test removes from singleton
+		list.clear();
+		list.addFront(1);
+		System.out.println("Remove element 1: "+list.removeFront());
+		System.out.println("Should display:\n[]");
+		list.display();
+		System.out.println();
+		System.out.println();
+		list.addBack(1);
+		System.out.println("Remove element 1: "+list.removeFront());
+		System.out.println("Should display:\n[]");
+		list.display();
+		System.out.println();
+		System.out.println();
+		list.addFront(1);
+		System.out.println("Remove element 1: "+list.removeBack());
+		System.out.println("Should display:\n[]");
+		list.display();
+		System.out.println();
+		System.out.println();
+		list.addBack(1);
+		System.out.println("Remove element 1: "+list.removeBack());
+		System.out.println("Should display:\n[]");
+		list.display();
+		System.out.println();
+		System.out.println();
+
+		System.out.println("\n\n********TESTING MIX OF ADDS AND REMOVES");
+		list.addFront(3);
+		list.addBack(2);
+		list.addFront(4);
+		list.addFront(5);
+		list.addBack(3);
+		list.addBack(8);
+		list.addBack(9);
+		System.out.println("Should display:\n[5, 4, 3, 2, 3, 8, 9]\thead=5 tail=9");
+		list.display();
+		System.out.println();
+
+		list.removeFront();
+		list.removeBack();
+		System.out.println("Should display:\n[4, 3, 2, 3, 8]\thead=4 tail=8");
+		list.display();
+		System.out.println();
+
+		System.out.println("********TESTING WITH STRINGS");
+		HeadTailListInterface<String> wordList = new LinkedHeadTailList<String>();
+		wordList.addFront("job!");
+		wordList.addFront("Nice");
+		wordList.addFront("it!");
+		wordList.addFront("did");
+		wordList.addFront("You");
+		System.out.println("Should display:\n[You, did, it!, Nice, job!] \thead=You tail=job!");
+		wordList.display();
+		System.out.println();
+		System.out.println("Contains \"Nice\" is true: "+ wordList.contains(new String("Nice")));
+		System.out.println("Contains \"You\"  is true: "+ wordList.contains(new String("You")));
+		System.out.println("Contains \"you\"  is false: "+ wordList.contains(new String("you")));
+		System.out.println();
+		System.out.println("Index of \"it!\" is 2: "+ wordList.indexOf(new String("it!")));
+		System.out.println("Last index of \"it!\" is 2: "+ wordList.lastIndexOf(new String("it!")));
 		
 		/*// UNCOMMENT IF COMPLETING THE EXTRA CREDIT
 		System.out.println("\n\n********EXTRA CREDIT");
